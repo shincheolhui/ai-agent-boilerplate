@@ -83,16 +83,16 @@ ai-agent-boilerplate/
       plugin.py             # DOC_SUMMARY 노드
   rag/
     __init__.py
-    build_dummy_index.py    # FAISS 더미 인덱스 생성
+    build_dummy_index.py    # FAISS 더미 인덱스 생성(단일 실행 테스트용)
     retriever.py            # 공용 retriever 로딩
   memory/
     __init__.py
-    chat_history.py         # 히스토리 저장소(확장 가능)
+    chat_history.py         # 히스토리 저장소(확장 가능, 현재 미구현 상태)
   data/
     faiss/                  # FAISS 인덱스 저장 위치
   .env                      # OpenAI API KEY
-  requirements.txt
-  README.md                 # ← 지금 작성 중
+  requirements.txt          # 버전 명시 없을 시 호환성 문제 발생, 반드시 호환성 체크해서 안정적인 최신 버전으로 명시
+  README.md
 ```
 
 ---
